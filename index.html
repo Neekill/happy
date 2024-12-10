@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Rahesh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Audio Element -->
+    <audio id="birthdayMusic" loop>
+        <source src="element/your-music-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Play audio on user interaction
+        document.body.addEventListener('click', () => {
+            const audio = document.getElementById('birthdayMusic');
+            audio.play();
+        }, { once: true }); // Ensures the audio plays only on the first click
+    </script>
+
+    <!-- Landing Page -->
+    <div class="landing">
+        <h1 class="main-title">Happy Birthday, Rakesh! 🎉</h1>
+        <p class="subtitle">Wishing you a day filled with joy and love!</p>
+        <p class="subtitle">Click anywhere to start the music!</p>
+    </div>
+
+    <!-- Section -->
+    <section class="section">
+        <p>
+            Many more Happy returns of the day Rakesh 🎉🥳🎉 <br>
+            God bless you with everything you deserve 😇
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
